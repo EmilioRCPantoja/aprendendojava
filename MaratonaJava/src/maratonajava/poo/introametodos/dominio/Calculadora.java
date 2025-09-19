@@ -42,5 +42,24 @@ public class Calculadora {
             System.out.println("não é par");
         }
     }
+    public void somaArray(int[] numeros){
+        int soma = 0;
+        for(int i: numeros ){
+            soma += i;
+        }
+
+        System.out.println("a soma dos elementos do array é igual a: "+soma);
+    }
+
+    //     após usar VarArgs não se pode passar nenhum outro parametro
+    public void somaVarArgs(int ... numeros){
+        int soma = 0;
+        for(int i:numeros){
+            soma +=i;
+        }
+
+        System.out.println(" a soma dos VarArgs é igual a: " + soma);
+
+    }
     
 }
