@@ -8,9 +8,9 @@ public class FuncionarioTeste {
         Funcionario funcionario = new Funcionario();
         Impressora impressora = new Impressora();
 
-        funcionario.nome = "uriarte";
-        funcionario.idade = 38;
-        funcionario.salarios = new float[]{20000, 10000, 15000};
+        funcionario.setNome("uriarte");
+        funcionario.setIdade(38);
+        funcionario.setSalarios(20000, 10000, 15000);
 
         impressora.ImprimeDados(funcionario);
 
