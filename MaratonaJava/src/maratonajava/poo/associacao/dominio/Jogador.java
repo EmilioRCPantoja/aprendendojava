@@ -1,10 +1,23 @@
 package maratonajava.poo.associacao.dominio;
 
+//Relação unidirecional 1 para 1 com Time
 public class Jogador {
     private String nome;
+    private Time time;
 
     public void imprime() {
         System.out.println(this.nome);
+        if(time.getNome() != null){
+            System.out.println(time.getNome());
+        }
+    }
+
+    public Time getTime() {
+        return time;
+    }
+
+    public void setTime(Time time) {
+        this.time = time;
     }
 
     public Jogador(String nome) {
